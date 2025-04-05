@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@media (max-width: 600px) {
+    .logos {
+        flex-flow: column nowrap;
+        margin: 100px auto 0 auto;
+    }
+    
+    .logo-wrap {
+        width: 33%;
+        margin: 10px auto;
+    } 
+}
+
+@media (max-width: 768px) {
+    .diferenciais {flex-flow: column nowrap;}
+
+    .box-diferenciais {width: 100%;}
+}
