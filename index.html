@@ -22,12 +22,14 @@
                 </a>
             </div>
 
-            <!--menu-responsivo
-            ...
-            -->
+            <div class="menu-mobile">
+                <a href="#">
+                    <img src="images/menu-mobile-icon.png" title="Menu" alt="Menu">
+                </a>
+            </div>
 
-            <nav class="menu-items">
-                <a style="border-bottom: 4px solid #FFDD33;" href="index.html" target="_self">Início</a>
+            <nav class="menu-desktop">
+                <a style="border-bottom: 5px solid #FFDD33;" href="index.html" target="_self">Início</a>
 
                 <a href="#" target="_self">Por que nós?</a>
 
@@ -108,11 +110,58 @@
     </section>
 </section>
 
-<!--<section class="center">
+<section class="center cta">
     <img src="images/banner-img.png" alt="" width="200">
     <h1>Vamos começar seu projeto?</h1>
     <p>Fale com um consultor e tire sua idéia do papel.</p>
-    <button id="entrar-em-contato" name="entrar-em-contato">Entrar em contato</button>
-</section>-->
+    <button type="button" id="entrar-em-contato" name="entrar-em-contato" onclick="">Entrar em contato</button>
+</section>
+
+<section class="center beneficios">
+    <div class="beneficios-box">
+        <div class="beneficios-wraper">
+            <h1>Benefícios para você</h1>
+
+            <div class="img-p">
+                <img src="images/checklist.png"><p>Garantia de resultados, pague de acordo com o desempenho do seu projeto ou campanha.</p>
+            </div>
+
+            <div class="img-p">
+                <img src="images/checklist.png"><p>Equipe qualificada. Nossos profissionais possuem vasta experiência nacional e no exterior.</p>
+            </div>
+
+            <div class="img-p">
+                <img src="images/checklist.png"><p>Acreditamos que trabalhos criativos são os que mais se destacam em meio a multidão. Saia do feijão com arroz.</p>
+            </div>
+            
+            <div class="btn-center">
+                <button type="button" id="entrar-em-contato" name="entrar-em-contato" onclick="">Entrar em contato</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="img-notebook">
+        <div class="img-wraper">
+            <img src="images/IMAGEM1.png" alt="Imagem de um notebook com códigos de programação">
+        </div>
+    </div>
+</section>
+
+<section class="center depoimentos">
+    <h1>Depoimentos</h1>
+</section>
+
+<section class="form">
+    <h1>Entre em contato</h1>
+    <form action="nodocumentation.html" method="post">
+        <input type="text" name="name" id="name" placeholder="Nome" required autocomplete="off">
+
+        <input type="email" name="email" id="email" placeholder="Email" required autocomplete="off">
+
+        <textarea name="textarea" id="textarea" placeholder="Mesagem"></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+</section>
 </body>
 </html>

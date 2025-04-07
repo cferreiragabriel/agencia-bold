@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .logos {
         flex-flow: column nowrap;
         margin: 100px auto 0 auto;
@@ -10,10 +10,25 @@
         width: 33%;
         margin: 10px auto;
     } 
+    
+    .diferenciais {flex-flow: column nowrap;}
+    
+    .box-diferenciais {width: 100%;}
+
+    .beneficios {flex-flow: column-reverse nowrap;}
+
+    .beneficios-box,
+    .img-notebook {width: 100%;}
+
+    .beneficios-wraper h1 {text-align: center;}
+
+    .btn-center {text-align: center;}
 }
 
-@media (max-width: 768px) {
-    .diferenciais {flex-flow: column nowrap;}
+@media (min-width: 910px) {
+    .menu-mobile {display: none;}
+}
 
-    .box-diferenciais {width: 100%;}
+@media (max-width: 910px) {
+    .menu-desktop {display: none;}
 }
