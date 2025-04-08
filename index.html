@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="description-here">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mediaqueries.css">
@@ -26,6 +26,9 @@
                 <a href="#">
                     <img src="images/menu-mobile-icon.png" title="Menu" alt="Menu">
                 </a>
+                <!--<div style="display: none;" class="menu-mobile-page">
+
+                </div>-->
             </div>
 
             <nav class="menu-desktop">
@@ -149,9 +152,40 @@
 
 <section class="center depoimentos">
     <h1>Depoimentos</h1>
+    <div class="container-depoimentos">
+        <div class="box-depoimento">
+            <img src="images/DEPOIMENTO1.png" alt="Foto de um usuário da Agência Bold">
+            <h2>Miriam Souza</h2>
+            <a href="#">Uber</a>
+            <p>O trabalho da Agência Bold foi fundamental para o nosso posicionamento e nossas estratégias de 2021. Juntos tivemos excelentes resultados e nossos clientes ficaram surpresos com a qualidade. Foi um trabalho incrível feito a muitas mãos pela Uber e pelo time da Agência Bold.</p>
+            <img class="rate" src="images/RATE.png" alt="Imagem de 5 estrelas de avaliação">
+        </div>
+
+        <div class="box-depoimento">
+            <img src="images/DEPOIMENTO2.png" alt="Foto de um usuário da Agência Bold">
+            <h2>Lucas Mendes</h2>
+            <a href="#">The North Face</a>
+            <p>Buscamos a Agência Bold para nos ajudar com campanhas de growth marketing focadas em um público extremamente específico. O produto teve faturamento maior que 300%.</p>
+            <img class="rate" src="images/RATE.png" alt="Imagem de 5 estrelas de avaliação">
+        </div>
+        
+        <div class="box-depoimento">
+            <img src="images/DEPOIMENTO3.png" alt="Foto de um usuário da Agência Bold">
+            <h2>Zaya Menphis</h2>
+            <a href="#">Rappi</a>
+            <p>A estratégia de lançamento da marca não seria a mesma sem o trabalho comprometido da Agência Bold. Obrigado ao Vinícius, que abraçou nossos desafios como um de nós.</p>
+            <img class="rate" src="images/RATE.png" alt="Imagem de 5 estrelas de avaliação">
+        </div>
+    </div>
+
+    <div class="slide">
+        <span>a</span>
+        <span>b</span>
+        <span>c</span>
+    </div>
 </section>
 
-<section class="form">
+<section class="center form">
     <h1>Entre em contato</h1>
     <form action="nodocumentation.html" method="post">
         <input type="text" name="name" id="name" placeholder="Nome" required autocomplete="off">
@@ -163,5 +197,20 @@
         <input type="submit" value="Enviar">
     </form>
 </section>
+
+<footer>
+    <div class="footer-description">
+        <p>Todos os direitos reservados.</p>
+    </div>
+    <nav class="menu-footer">
+        <a style="border-bottom: 4px solid #FFDD33;" href="index.html" target="_self">Início</a>
+
+        <a href="#" target="_self">Por que nós?</a>
+
+        <a href="#" target="_self">Depoimentos</a>
+
+        <a class="contact-btn-f" href="#" target="_self">Entre em contato</a>
+    </nav>
+</footer>
 </body>
 </html>

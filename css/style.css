@@ -14,17 +14,19 @@ html, body {
 :root {
     --headingPadrao: 3em;
     --marginTopPadrao: 100px;
+    --marginTopResponse: 50px;
 }
 
 .center {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1366px;
     padding: 0 2%;
     margin: 0 auto;
 }
 
 .main {
     height: auto;
+    min-height: 768px;
     background: white url("../images/hero-background.png") no-repeat scroll center;
     background-size: cover;
     padding-block: 40px 20px;
@@ -45,9 +47,7 @@ html, body {
     border-radius: 10px;
 }
 
-.menu-mobile img:hover {
-    background-color: #0F3FD3;
-}
+.menu-mobile img:hover {background-color: #0F3FD3;}
 
 .menu-desktop a {
     color: white;
@@ -69,7 +69,7 @@ html, body {
     flex-flow: column nowrap;
     width: 100%;
     text-align: center;
-    margin: 100px 0 0 0;
+    margin-top: 100px;
 }
 
 .mockup h1 {
@@ -101,7 +101,7 @@ html, body {
 
 .por-que-nos {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1366px;
     margin: 120px auto 0 auto;
 }
 
@@ -174,7 +174,7 @@ html, body {
     border: 1px solid #FFDD33;
     cursor: pointer;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    transition: 0.25s;
+    transition: 0.2s;
 }
 
 .cta button:hover {
@@ -228,7 +228,7 @@ html, body {
     border: 1px solid #0F3FD3;
     cursor: pointer;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    transition: 0.25s;
+    transition: 0.2s;
 }
 
 .beneficios-wraper button:hover {
@@ -247,6 +247,7 @@ html, body {
 .depoimentos {
     margin-top: var(--marginTopPadrao);
     background-color: #FBFCFE;
+    padding-block: 100px;
 }
 
 .depoimentos h1 {
@@ -254,11 +255,145 @@ html, body {
     text-align: center;
 }
 
+.container-depoimentos {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    gap: 15px;
+    width: 90%;
+    text-align: center;
+    margin: 80px auto 0 auto;
+}
+
+.container-depoimentos p,
+.container-depoimentos a {
+    color: #7E92AC;
+    margin-top: 15px;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    text-decoration: none;
+}
+
+.box-depoimento {
+    background-color: white;
+    box-shadow: 0 10px 10px 10px #70707016;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.box-depoimento h2{
+    margin-block: 20px 8px;
+    font-weight: normal;
+}
+
+.rate {margin-top: 30px;}
+
+.slide {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.slide span {
+    width: 20px;
+    height: 20px;
+    background-color: #D2D8EB;
+    border-radius: 50%;
+}
+
 .form {
-    margin-top: var(--marginTopPadrao);
+    width: 80%;
+    max-width: 600px;
+    margin: 100px auto 0 auto;
 }
 
 .form h1 {
     font-size: var(--headingPadrao);
     text-align: center;
+    margin-bottom: 50px;
+}
+
+.form input[type=text],
+.form input[type=email] {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #C3CCE8;
+    border-radius: 6px;
+    outline: 0;
+    text-indent: 1em;
+    margin-bottom: 20px;
+    font-size: 1em;
+    font-family: "Raleway", sans-serif;
+}
+
+.form textarea {
+    resize: none;
+    width: 100%;
+    height: 200px;
+    border: 1px solid #C3CCE8;
+    border-radius: 6px;
+    outline: 0;
+    margin-bottom: 25px;
+    font-size: 1em;
+    padding: 1em;
+    font-family: "Raleway", sans-serif;
+}
+
+.form input[type=submit] {
+    width: 100%;
+    background-color: #255AFF;
+    color: white;
+    border: 1px solid #255AFF;
+    padding-block: 16px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.form input[type=submit]:hover {
+    background-color: white;
+    color: #255AFF;
+}
+
+footer {
+    margin-top: var(--marginTopPadrao);
+    background-color: #255AFF;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 40px 2%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.footer-description {
+    align-content: center;
+    width: 50%;
+    color: white;
+    text-align: center;
+}
+
+.menu-footer {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: end;
+    width: 50%;
+}
+
+.menu-footer a {
+    align-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-left: 8px;
+    padding: 8px;
+}
+
+.contact-btn-f {
+    background-color: #0F3FD3;
+    padding: 12px !important;
+    border-radius: 12px;
 }

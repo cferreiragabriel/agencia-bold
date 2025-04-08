@@ -1,5 +1,29 @@
 @charset "UTF-8";
 
+@media (max-width: 980px) {
+    .menu-footer {flex-flow: column wrap;}
+    
+    .menu-footer a {
+        margin: 5px 0; 
+        padding: 0;
+    }
+}
+
+@media (max-width: 910px) {
+    .menu-desktop {display: none;}
+    
+    .container-depoimentos {
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        gap: 30px;
+        width: 80%;
+    }  
+}
+
+@media (min-width: 910px) {
+    .menu-mobile {display: none;}
+}
+
 @media (max-width: 768px) {
     .logos {
         flex-flow: column nowrap;
@@ -25,10 +49,22 @@
     .btn-center {text-align: center;}
 }
 
-@media (min-width: 910px) {
-    .menu-mobile {display: none;}
-}
+@media (max-width: 600px) {
+    .diferenciais
+    .cta,
+    .beneficios,
+    .depoimentos,
+    footer {margin-top: var(--marginTopResponse);}
 
-@media (max-width: 910px) {
-    .menu-desktop {display: none;}
+    footer {flex-flow: column-reverse nowrap;}
+
+    .footer-description {
+        width: 100%;
+        margin-top: 40px;
+    }
+    
+    .menu-footer {
+        justify-content: center;
+        width: 100%;
+    }
 }
