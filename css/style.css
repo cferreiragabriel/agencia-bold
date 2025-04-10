@@ -89,7 +89,7 @@ html, body {
 .logos {
     display: flex;
     flex-flow: row nowrap;
-    margin: 120px auto 0 auto;
+    margin: 100px auto 0 auto;
 }
 
 .logo-wrap {
@@ -127,7 +127,7 @@ html, body {
 
 .box-diferenciais {
     width: 33.3%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     padding: 40px;
     text-align: left;
@@ -146,7 +146,7 @@ html, body {
     background-image: linear-gradient(to bottom, #0F3FD3, #255AFF );
     padding-block: 60px;
     margin-top: var(--marginTopPadrao);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .cta h1 {
@@ -259,7 +259,7 @@ html, body {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
-    gap: 15px;
+    gap: 20px;
     width: 90%;
     text-align: center;
     margin: 80px auto 0 auto;
@@ -276,7 +276,7 @@ html, body {
 
 .box-depoimento {
     background-color: white;
-    box-shadow: 0 10px 10px 10px #70707016;
+    box-shadow: 8px 8px 10px #70707016;
     padding: 40px;
     border-radius: 20px;
 }
@@ -312,6 +312,8 @@ html, body {
     margin-bottom: 50px;
 }
 
+.form label {padding-left: 5px;}
+
 .form input[type=text],
 .form input[type=email] {
     width: 100%;
@@ -320,7 +322,7 @@ html, body {
     border-radius: 6px;
     outline: 0;
     text-indent: 1em;
-    margin-bottom: 20px;
+    margin-block: 3px 20px;
     font-size: 1em;
     font-family: "Raleway", sans-serif;
 }
@@ -332,7 +334,7 @@ html, body {
     border: 1px solid #C3CCE8;
     border-radius: 6px;
     outline: 0;
-    margin-bottom: 25px;
+    margin-block: 3px 20px;
     font-size: 1em;
     padding: 1em;
     font-family: "Raleway", sans-serif;
@@ -364,7 +366,7 @@ footer {
     display: flex;
     flex-flow: row nowrap;
     padding: 40px 2%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .footer-description {

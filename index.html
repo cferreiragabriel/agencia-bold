@@ -178,21 +178,24 @@
         </div>
     </div>
 
-    <div class="slide">
-        <span>a</span>
-        <span>b</span>
-        <span>c</span>
-    </div>
+    <!--slide pendente
+
+    <div class="slide"></div>
+
+    -->
 </section>
 
 <section class="center form">
     <h1>Entre em contato</h1>
-    <form action="nodocumentation.html" method="post">
-        <input type="text" name="name" id="name" placeholder="Nome" required autocomplete="off">
+    <form action="nodocumentation.html" method="post" enctype="multipart/form-data">
+        <label for="name">Nome:</label>
+        <input type="text" name="name" id="name" placeholder="Nome" required autocomplete="off" minlength="3" maxlength="16">
 
-        <input type="email" name="email" id="email" placeholder="Email" required autocomplete="off">
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" placeholder="Email" required autocomplete="off" minlength="3" maxlength="100">
 
-        <textarea name="textarea" id="textarea" placeholder="Mesagem"></textarea>
+        <label for="textarea">Mensagem:</label>
+        <textarea name="textarea" id="textarea" placeholder="Mesagem" maxlength="300"></textarea>
 
         <input type="submit" value="Enviar">
     </form>
